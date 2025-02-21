@@ -15,6 +15,7 @@ permissions:
 env:
   TF_STATE_FILE: "terraform.tfstate"
   TF_DIR: "infrastructure"
+  STATUSCAKE_API_TOKEN: ${{ secrets.STATUSCAKE_API_TOKEN }}
 
 jobs:
   terraform:
