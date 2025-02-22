@@ -1,9 +1,22 @@
+terraform {
+  required_providers {
+    statuscake = {
+      source = "StatusCakeDev/statuscake"
+      version = "2.2.2"
+    }
+  }
+}
+
 variable "website_url" {
   type = string
 }
 
 variable "contact_group_name" {
   type = string
+}
+
+provider "statuscake" {
+  api_key = var.statuscake_api_key
 }
 
 resource "statuscake_contact_group" "example" {
