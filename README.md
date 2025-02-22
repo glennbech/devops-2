@@ -5,3 +5,5 @@ Vi kan bruke AWS S3 med DynamoDB som håndterer state locking. Dette forhindrer 
 for brukere å samarbeide.
 
 Terraform Cloud kan også bli brukt for fjernlagring av state-filene og for versjonering
+
+Terraform Cloud kan også bli brukt for fjernlagring av state-filene og for versjonering
