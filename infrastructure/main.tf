@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "statuscake" {
-  token = var.statuscake_api_token
+  api_token = var.statuscake_api_key
 }
 
 module "website_monitor_1" {
