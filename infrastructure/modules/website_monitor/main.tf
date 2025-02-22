@@ -15,6 +15,10 @@ variable "contact_group_name" {
   type = string
 }
 
+variable "statuscake_api_key" {
+  type = string
+}
+
 provider "statuscake" {
   api_key = var.statuscake_api_key
 }
