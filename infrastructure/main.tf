@@ -15,18 +15,12 @@ module "website_monitor_1" {
   source = "./modules/website_monitor"
   website_url = "https://www.example1.com"
   contact_group_name = "example-group-1"
-  providers = {
-    statuscake = statuscake
-  }
 }
 
 module "website_monitor_2" {
   source = "./modules/website_monitor"
   website_url = "https://www.example2.com"
   contact_group_name = "example-group-2"
-  providers = {
-    statuscake = statuscake
-  }
 }
 
 output "website_monitor_1_uptime_check_id" {

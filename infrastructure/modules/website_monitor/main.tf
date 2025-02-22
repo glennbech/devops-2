@@ -15,14 +15,6 @@ variable "contact_group_name" {
   type = string
 }
 
-variable "statuscake_api_key" {
-  type = string
-}
-
-provider "statuscake" {
-  api_key = var.statuscake_api_key
-}
-
 resource "statuscake_contact_group" "example" {
   name = var.contact_group_name
   emails = ["example@example.com"]
