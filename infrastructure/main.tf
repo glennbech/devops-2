@@ -7,10 +7,6 @@ terraform {
   }
 }
 
-provider "statuscake" {
-  api_key = var.statuscake_api_key
-}
-
 resource "statuscake_uptime_check" "example" {
   check_interval = 300
   confirmation   = 3
@@ -26,7 +22,7 @@ resource "statuscake_uptime_check" "example" {
   }
 
   monitored_resource {
-    address = var.website_url
+    address = "https://www.example.com"
   }
   tags = [
     "production",
