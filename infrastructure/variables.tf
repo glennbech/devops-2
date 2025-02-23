@@ -4,5 +4,5 @@ variable "statuscake_api_key" {
 
 variable "website_url" {
   type = string
-  default = "https://www.example.com"
+  default = "https://www.youtube.com"
 }
