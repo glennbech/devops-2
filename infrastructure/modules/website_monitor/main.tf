@@ -21,7 +21,10 @@ variable "contact_group_emails" {
 
 resource "statuscake_contact_group" "example" {
   name   = var.contact_group_name
-  emails = var.contact_group_emails
+  email_addresses = [
+    "johnsmith@example.com",
+    "janesmith@example.com",
+  ]
 }
 
 resource "statuscake_uptime_check" "example" {
